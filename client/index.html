@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Scripting app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <span class="error" id="error"></span>
+      <h1 class="title">Scripting web page through URL and get some info about it.</h1>
+      <form class="main-form" method="POST">
+        <label class="input-label">URL</label>
+        <input class="url-input" type="text" placeholder="Inter your URL here plase" id="url" />
+        <button id="submit" class="submit-button" type="submit">Submit</button>
+        <span id="urlValidate" class="url-validate"></span>
+      </form>
+    </div>
+    <div class="body">
+      <h1 class="title">Your URL info</h1>
+      <div id="content" class="content"></div>
+    </div>
+  </div>
+  <span id="spinner"></span>
+  <script src="./main.js"></script>
+</body>
+
+</html>
